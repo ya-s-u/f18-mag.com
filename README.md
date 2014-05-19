@@ -57,12 +57,18 @@
 
 ## 各種設定情報
 ### 開発環境 (作り中)
-http://dev.f18-mag.com
-
-|ユーザー名|admin|
+|URL|http://dev.f18-mag.com|
 |---|---|
+|ユーザー名|admin|
 |パスワード|18ma9|
 
 ### メールアドレス
-info@f18-mag.com
-※また調べときます
+|アドレス|info@f18-mag.com|
+|---|---|
+|POP|pop3.lolipop.jp|
+|SMTP|smtp.lolipop.jp|
+|アカウント|info@f18-mag.com|
+|パスワード|f18bydon|
+
+## アクセス解析
+※執筆中
