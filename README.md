@@ -1,43 +1,68 @@
-CakePHP
-=======
+# このリポジトリについて
+---
+運営メンバーのみアクセス可能で、外部に公開されていません。
+使ってもらいたい機能は2つのみで、
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+- バグ報告・機能要望　→　Issues
+- 運営資料・ネタ共有　→　Wiki
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+です。
 
-Some Handy Links
-----------------
+## リニューアルまでの流れ
+### 基本
+1. 僕のタスクがIssueに追加
+2. 作業し開発環境に反映、Issueをclose
+3. 全てのタスクが完了したら本番環境にコピー
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+### 緊急ラベル付き
+開発環境に反映すると共に、本番環境にもその場で反映します。
 
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
+## 開発環境について
+- データベースやアップロードファイルはコピーしたものを使ってるので、壊しても大丈夫です。
+- 記事作成などは本番環境で行ってください
+- 挙動確認やレイアウト崩れ発見のご協力お願いします！
 
-[API](http://api.cakephp.org) - A reference to CakePHP's classes
+## Issuesの使い方
+### 新規追加
+「New Issue」から追加できます。細かい単位で追加をお願いします。本文の方は無くても構いません。
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+|title|タイトルだけで内容が全て分かると助かります。|
+|:--|:--|
+|label|あてはまるものがある時だけ追加して下さい。|
+|assign|特定の人が作業する場合は登録して下さい(開発なら後藤とか)|
+|milestone|リニューアルに関わる事なら「リニューアル」を登録して下さい|
+|comment|具体的な内容があるならここに書いて下さい。書かなくてもいいです。画像投稿できます。|
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+### ラベルについて
+- [バグ] → 挙動の不具合やレイアウト崩れなどのバグ報告
+- [要望] → 機能追加・削除・改善の要望
 
-[Community Center](http://community.cakephp.org) - A source for everything community related
+また、
 
-[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework
+- [緊急] → このラベルがついたものは開発環境+本番環境にその場で適用されます
 
-[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference
+### 個々のIssueにコメント
+議論とか突っ込みとかあったらここでやります。画像投稿できます。
 
-[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP
 
-Get Support!
-------------
+### Closeについて
+タスクが完了、または議論が完了したらそのIssueはCloseされます。Closeして下さい。
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
+## マイルストーンについて
+リニューアルまでの作業状況を把握できます。
 
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
+## Wikiの使い方
+運営資料とかネタ共有に使います？
 
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
 
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
+## 各種設定情報
+### 開発環境 (作り中)
+http://dev.f18-mag.com
 
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
+|ユーザー名|admin|
+|---|---|
+|パスワード|18ma9|
 
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+### メールアドレス
+info@f18-mag.com
+※また調べときます
