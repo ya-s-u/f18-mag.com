@@ -29,6 +29,7 @@ tmp/*
 app/tmp/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
+app/[Cc]onfig/email.php
 app/webroot/img/articles/*
 app/webroot/img/informations/*
 app/webroot/img/photos/*
