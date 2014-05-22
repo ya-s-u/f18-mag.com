@@ -34,7 +34,7 @@
 	
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
-
+	
 	<title>F1.8 magazine</title>
 		
 

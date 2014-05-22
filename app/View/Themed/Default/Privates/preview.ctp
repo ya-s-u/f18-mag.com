@@ -1,11 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://dev.f18-mag.com/ -->
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="expires" content="0">
+	
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="copyright" content="Copyright freepaperDON">
+	
+	<meta name="description" content="名古屋がさらに魅力的に見えるWEBマガジン。さまざまなイベントのレポートや名古屋の名物・名所紹介に加え、フリーペーパーDONの出張企画があります。">
+	<meta name="keywords" content="名古屋,名物,名所,イベント,フリーペーパーDON">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<title>#プライベート# 記事確認</title>
+	
+	<?php
+		echo $this->fetch('meta');
+		echo $this->fetch('script');
+		echo $this->fetch('css');
+		
+		echo $this->html->script('jquery-2.1.0.min');
+		echo $this->html->script('html5media.min');
+		echo $this->html->script('slide');
+	
+		echo $this->Html->css('pc');
+	?>
+
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<a href="//f18-mag.com"><img class="logo" src="../img/logo_text.png"></a>
+	</div>
+</div>
+
 <div id="main" class="view">
 	<div id="view">
 		<p class="category"><span><?php echo $this->Common->category($article['Article']['category'])?></span></p>
 		<h2><?php echo $article['Article']['title']?></h2>
 		<ul id="slide">
 			<span id="published"><?php echo date("Y/n/j" , strtotime($article['Article']['published']))?></span>
-			<span id="next"><img src="img/arrow-r.png"></span>
-			<span id="prev"><img src="img/arrow-l.png"></span>
+			<span id="next"><img src="../img/arrow-r.png"></span>
+			<span id="prev"><img src="../img/arrow-l.png"></span>
 			<?php foreach ($Photos as $photo) : ?>
 			<li>
 				<?php echo $this->Html->image('photos/resized/img-'.$photo['Photo']['id'].'.jpg')?>
@@ -82,19 +120,12 @@
 	</div>
 	<?php endif?>
 </div>
-<div class="container">
-	<div class="tab tab1 tab-margin">
-		<p class="title">その他の記事</p>
-		<ul class="content">
-			<?php foreach ($Articles as $key => $article) : ?>
-			<li>
-				<a href="/view?post=<?php echo $article['Article']['id']?>">
-					<?php echo $this->Html->image('articles/large/img-'.$article['Article']['id'].'.jpg',array('class'=>'thumb'))?>
-					<p><?php echo $this->Common->category($article['Article']['category'])?></p>
-					<h3><?php echo $article['Article']['title']?></h3>
-				</a>
-			</li>
-			<?php endforeach; ?>
-		</ul>
+
+<div id="footer">
+	<div class="container">
+		<a href="//f18-mag.com"><img class="logo" src="../img/logo_text.png"></a>
+		<p>Copyright (C)2014 F1.8magazine All Rights Reserved.</p>
 	</div>
 </div>
+</body>
+</html>

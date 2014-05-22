@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://dev.f18-mag.com/ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=320,user-scalable=yes">
+	
+	
+	<meta http-equiv="expires" content="0">
+	
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="copyright" content="Copyright freepaperDON">
+	
+	<meta name="description" content="名古屋がさらに魅力的に見えるWEBマガジン。さまざまなイベントのレポートや名古屋の名物・名所紹介に加え、フリーペーパーDONの出張企画があります。">
+	<meta name="keywords" content="名古屋,名物,名所,イベント,フリーペーパーDON">
+	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<title>#プライベート# 記事確認</title>
+		
+
+	<?php
+		echo $this->fetch('meta');
+		echo $this->fetch('script');
+		echo $this->fetch('css');
+		
+		echo $this->html->script('jquery-2.1.0.min');
+		echo $this->html->script('html5media.min');
+		echo $this->html->script('jquery.flipsnap.min');
+	
+		echo $this->Html->css('sp');
+	?>
+</head>
+<body>
+<div id="header">
+	<a href="/"><img class="logo" src="../img/logo_text.png"></a>
+</div>
+
 <div id="main" class="view">
 	<div id="view">
 		<p class="category">
@@ -86,23 +125,6 @@
 	</div>
 	<?php endif?>
 </div>
-<div class="view container">
-	<div id="others" class="tab tab2">
-		<p class="title">その他の記事</p>
-		<ul class="content">
-			<?php foreach ($Articles as $key => $article) : ?>
-			<li>
-				<a href="/view?post=<?php echo $article['Article']['id']?>">
-					<?php echo $this->Html->image('articles/medium/img-'.$article['Article']['id'].'.jpg',array('class'=>'thumb'))?>
-					<p><?php echo $this->Common->category($article['Article']['category'])?></p>
-					<h3><?php echo $article['Article']['title']?></h3>
-				</a>
-			</li>
-			<?php endforeach; ?>
-		</ul>
-	</div>
-</div>
-
 <script>
 $(function(){
 	var $pointer = $('ul#thumb li');
@@ -135,3 +157,10 @@ $(function(){
 	}, false);
 });
 </script>
+<div id="footer">
+	<div class="container">
+		<p>Copyright (C)2014 F1.8magazine All Rights Reserved.</p>
+	</div>
+</div>
+</body>
+</html>
