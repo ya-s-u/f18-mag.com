@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0023)http://dev.f18-mag.com/ -->
+<!-- For Mobile Pages -->
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,8 +15,26 @@
 	<meta name="description" content="名古屋がさらに魅力的に見えるWEBマガジン。さまざまなイベントのレポートや名古屋の名物・名所紹介に加え、フリーペーパーDONの出張企画があります。">
 	<meta name="keywords" content="名古屋,名物,名所,イベント,フリーペーパーDON">
 	
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@F18mag">
+	<meta name="twitter:title" content="F1.8magazine">
+	<meta name="twitter:description" content="名古屋がさらに魅力的に見えるWEBマガジン。さまざまなイベントのレポートや名古屋の名物・名所紹介に加え、フリーペーパーDONの出張企画があります。">
+	<meta name="twitter:creator" content="@F18mag">
+	<meta name="twitter:image:src" content="http://f18-mag.com/img/ogp.png">
+	<meta name="twitter:domain" content="http://f18-mag.com">
+	<meta name="twitter:app:name:iphone" content="">
+	<meta name="twitter:app:name:ipad" content="">
+	<meta name="twitter:app:name:googleplay" content="">
+	<meta name="twitter:app:url:iphone" content="">
+	<meta name="twitter:app:url:ipad" content="">
+	<meta name="twitter:app:url:googleplay" content="">
+	<meta name="twitter:app:id:iphone" content="">
+	<meta name="twitter:app:id:ipad" content="">
+	<meta name="twitter:app:id:googleplay" content="">
 	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+
 	<title>F1.8 magazine</title>
 		
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0023)http://dev.f18-mag.com/ -->
+<!-- For Desktop Pages -->
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
