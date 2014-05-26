@@ -22,7 +22,11 @@
 							<tr>
 								<td><span class="label label-<?php echo $this->Common->status_css($article['Article']['status'])?>"><?php echo $this->Common->status($article['Article']['status'])?></span></td>
 								<td><?php echo $article['Article']['title']?> 
-								<?php if($article['Article']['status']!=4 && ($article['Article']['writer_id']==$id || $type=20)) echo '<a href="/admins/edit/'.$article['Article']['id'].'">edit</a>'?> 
+								<?php if(($article['Article']['status']!=4 && ($article['Article']['writer_id']==$id) || $type=20)) echo '<a href="/admins/edit/'.$article['Article']['id'].'">edit</a>'?> 
+								<?php if($article['Article']['status']==2) {
+								$id = pow((int)$article['Article']['id']*1993/10+3,2);
+								echo '<a href="/privates/preview?post='.$id.'" target="_blank">preview</a>';
+								} ?> 
 								<?php //if($type=20) echo $this->Html->link('delete','/admins/delete_article/'.$article['Article']['id'],null,'really?')?>
 								</td>
 								<td><?php echo $this->Common->category($article['Article']['category'])?></td>
