@@ -68,7 +68,7 @@
 	<ul class="menu">
 		<li><a href="/about">F1.8とは</a></li>
 		<li><a href="/writer">ライター</a></li>
-		<li><a href="">お問い合わせ</a></li>
+		<li><a href="/contact">お問い合わせ</a></li>
 	</ul>
 </div>
 <?php echo $this->fetch('content'); ?>

@@ -70,7 +70,7 @@
 		<ul class="menu">
 			<li><a href="/about">F1.8とは</a></li>
 			<li><a href="/writer">ライター</a></li>
-			<li><a href="">お問い合わせ</a></li>
+			<li><a href="/contact">お問い合わせ</a></li>
 		</ul>
 		<div id="sns">
 			<iframe id="fb" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Ff1.8magazine&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>

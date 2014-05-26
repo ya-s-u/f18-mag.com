@@ -77,6 +77,33 @@ class PagesController extends AppController {
 		$this->set('Writers',$this->User->find('all',$params));
 	}
 	
+	public function contact() {
+		$this->set('title_for_layout','プロフィール編集');
+		
+		if($this->request->isPost()) {
+        	$vars = array (
+        		'name'=> $this->request->data['Pages']['name'],
+        		'category'=> $this->request->data['Pages']['category'],
+        		'body'=> $this->request->data['Pages']['body'],
+        	);
+			$email = new CakeEmail('smtp');
+			$sent = $email
+				->config(array('log' => 'emails'))
+		  		->template('default','contact')
+		  		->viewVars($vars)
+		  		->to($this->request->data['Pages']['address'])
+		  		->bcc('info@f18-mag.com')
+		 		->emailFormat('text')
+		  		->subject('お問い合わせメール送信完了')
+		  		->send();
+		  	if($sent) {
+	  			$this->Session->setFlash('送信しました');
+			} else {
+ 	  			$this->Session->setFlash('エラー');
+			}
+		}
+	}
+	
 	public function view() {
 		$this->set('title_for_layout','プロフィール編集');
 		
