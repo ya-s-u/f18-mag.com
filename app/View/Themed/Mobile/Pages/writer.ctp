@@ -1,4 +1,5 @@
 <div id="main">
+	
 	<ul id="writer">
 		<h2>運営メンバー</h2>
 			<li>
@@ -28,7 +29,7 @@
 				</div>
 			</li>
 			<li>
-				<p>&nbsp;</p>
+				<p id="position">副編集長</p>
 				<?php
 				$key = 2;
 				if(file_exists('img/users/resized/img-'.$Members[$key]['User']['id'].'.jpg')) {
@@ -54,7 +55,7 @@
 				</div>
 			</li>
 			<li>
-				<p>&nbsp;</p>
+				<p id="position">デザイン</p>
 				<?php
 				$key = 3;
 				if(file_exists('img/users/resized/img-'.$Members[$key]['User']['id'].'.jpg')) {
@@ -80,7 +81,7 @@
 				</div>
 			</li>
 			<li>
-				<p id="position">デザイン・開発</p>
+				<p id="position">開発</p>
 				<?php
 				$key = 0;
 				if(file_exists('img/users/resized/img-'.$Members[$key]['User']['id'].'.jpg')) {
