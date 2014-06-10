@@ -6,7 +6,7 @@ class CommonHelper extends AppHelper {
 
 	function category($param) {
 		switch($param) {
-			case 'report' : return 'イベントレポ';
+			case 'report' : return 'イベント';
 			case 'majiaho' : return 'マジアホ';
 			case 'interview' : return 'インタビュー';
 			case 'sightseeing' : return '名物・名所';
