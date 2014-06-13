@@ -66,7 +66,7 @@
 <body>
 <div id="header">
 	<div class="container">
-		<a href="//f18-mag.com"><img class="logo" src="img/logo_text.png"></a>
+		<a href="//f18-mag.com"><?php echo $this->Html->image('logo_text.png',array('class'=>'logo'))?></a>
 		<ul class="menu">
 			<li><a href="/about">F1.8とは</a></li>
 			<li><a href="/writer">ライター</a></li>
@@ -82,7 +82,7 @@
 <?php echo $this->fetch('content'); ?>
 <div id="footer">
 	<div class="container">
-		<a href="//f18-mag.com"><img class="logo" src="img/logo_text.png"></a>
+		<a href="//f18-mag.com"><?php echo $this->Html->image('logo_text.png',array('class'=>'logo'))?></a>
 		<p>Copyright (C)2014 F1.8magazine All Rights Reserved.</p>
 	</div>
 </div>

@@ -64,7 +64,7 @@
 </head>
 <body>
 <div id="header">
-	<a href="/"><img class="logo" src="img/logo_text.png"></a>
+	<a href="/"><?php echo $this->Html->image('logo_text.png',array('class'=>'logo'))?></a>
 	<ul class="menu">
 		<li><a href="/about">F1.8とは</a></li>
 		<li><a href="/writer">ライター</a></li>

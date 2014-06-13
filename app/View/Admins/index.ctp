@@ -24,7 +24,11 @@
 											}
 										?>
 										<?php echo $article['Article']['title']?><br />
-										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo date("Y/n/j H:i" , strtotime($article['Article']['modified']))?>
+										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo $this->Common->convert_to_fuzzy_time($article['Article']['modified'])?>
+										<?php
+										$id = pow((int)$article['Article']['id']*1993/10+3,2);
+										echo '<a href="/privates/preview?post='.$id.'" target="_blank">preview</a>';
+										?>
 									</td>
 								</tr>
 								<?php endforeach; ?>
@@ -49,7 +53,11 @@
 											}
 										?>
 										<?php echo $article['Article']['title']?><br />
-										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo date("Y/n/j H:i" , strtotime($article['Article']['modified']))?>
+										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo $this->Common->convert_to_fuzzy_time($article['Article']['modified'])?>
+										<?php
+										$id = pow((int)$article['Article']['id']*1993/10+3,2);
+										echo '<a href="/privates/preview?post='.$id.'" target="_blank">preview</a>';
+										?>
 									</td>
 								</tr>
 								<?php endforeach; ?>
@@ -74,7 +82,11 @@
 											}
 										?>
 										<?php echo $article['Article']['title']?><br />
-										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo date("Y/n/j H:i" , strtotime($article['Article']['modified']))?>
+										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo $this->Common->convert_to_fuzzy_time($article['Article']['modified'])?>
+										<?php
+										$id = pow((int)$article['Article']['id']*1993/10+3,2);
+										echo '<a href="/privates/preview?post='.$id.'" target="_blank">preview</a>';
+										?>
 									</td>
 								</tr>
 								<?php endforeach; ?>
@@ -99,7 +111,11 @@
 											}
 										?>
 										<?php echo $article['Article']['title']?><br />
-										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo date("Y/n/j H:i" , strtotime($article['Article']['modified']))?>
+										<span class="glyphicon glyphicon-user"></span><?php echo $article['Writer']['username']?>　<span class="glyphicon glyphicon-time"></span><?php echo $this->Common->convert_to_fuzzy_time($article['Article']['modified'])?>
+										<?php
+										$id = pow((int)$article['Article']['id']*1993/10+3,2);
+										echo '<a href="/privates/preview?post='.$id.'" target="_blank">preview</a>';
+										?>
 									</td>
 								</tr>
 								<?php endforeach; ?>

@@ -6,7 +6,19 @@ class PagesController extends AppController {
 	public $components = array('Session','Email');
 
 	public $view = 'Theme';
- 
+ 	
+	public $paginate = array(
+		'page'=>1,
+		'conditions'=>array(
+			'Article.status' => 4,
+		),
+		'fields'=>array(),
+		'sort'=>'Article.published',
+		'limit'=>10,
+		'direction'=>'desc',
+		'recursive'=>0,
+	);
+			
     public function beforeFilter() {
         if ($this->InsAuth) {
             $this->InstructorAuth();
@@ -27,6 +39,8 @@ class PagesController extends AppController {
         if($_ua = preg_match($pattern, $_SERVER['HTTP_USER_AGENT'])){
         	$this->layout='common_mobile';
             $this->theme = "mobile";
+            
+			$i  = 0;
         }else{
         	$this->layout='common_default';
             $this->theme = "default";
@@ -34,6 +48,13 @@ class PagesController extends AppController {
     }
 	
 	public function index() {
+		$this->set('title_for_layout','プロフィール編集');
+
+		$this->set('Articles',$this->paginate('Article'));
+	}
+	
+	
+	public function index2() {
 		$this->set('title_for_layout','プロフィール編集');
 		
 		$params = array(

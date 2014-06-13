@@ -49,7 +49,7 @@ class PrivatesController extends AppController {
 		);
 		$article = $this->Article->find('first',$params);
 		
-		if($article['Article']['status'] == 2) {
+		if($article['Article']['status'] != 4) {
 			$this->set('article',$article);
 		} else {
 			$this->redirect('//f18-mag.com');
