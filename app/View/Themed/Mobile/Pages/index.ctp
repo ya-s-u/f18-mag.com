@@ -2,7 +2,7 @@
 	<ul id="top">
 		<?php foreach ($Articles as $key => $article) : ?>
 		<li class="tab2">
-			<a href="//f18-mag.com/view?post=<?php echo $article['Article']['id']?>">
+			<a href="/view?post=<?php echo $article['Article']['id']?>">
 				<?php echo $this->Html->image('articles/medium/img-'.$article['Article']['id'].'.jpg',array('class'=>'thumb'))?>
 				<div class="sub">
 					<p><?php echo $this->Common->Category($article['Article']['category'])?></p>

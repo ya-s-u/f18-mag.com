@@ -4,6 +4,8 @@ App::uses('AuthComponent', 'Controller/Component');
 class Article extends AppModel {
 	public $name = 'Article';
 	
+	public $useTable = 'articles_dev';
+	
 	public $validate = array(
 	);
 	

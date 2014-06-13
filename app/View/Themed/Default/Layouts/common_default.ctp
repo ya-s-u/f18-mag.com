@@ -4,6 +4,8 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
+	<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
+	
 	<meta http-equiv="expires" content="0">
 	
 	<meta http-equiv="Content-Style-Type" content="text/css">
@@ -37,7 +39,7 @@
 	
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
-	<title>F1.8 magazine</title>
+	<title>#開発環境# F1.8 magazine</title>
 	
 	<?php
 		echo $this->fetch('meta');
@@ -51,22 +53,11 @@
 		echo $this->Html->css('pc');
 	?>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-48276900-1', 'f18-mag.com');
-	  ga('send', 'pageview');
-	
-	</script>
-
 </head>
 <body>
 <div id="header">
 	<div class="container">
-		<a href="//f18-mag.com"><?php echo $this->Html->image('logo_text.png',array('class'=>'logo'))?></a>
+		<?php echo $this->Html->link($this->Html->image('logo_text.png',array('class'=>'logo')),'/',array('escape' => false));?>
 		<ul class="menu">
 			<li><a href="/about">F1.8とは</a></li>
 			<li><a href="/writer">ライター</a></li>
@@ -82,7 +73,7 @@
 <?php echo $this->fetch('content'); ?>
 <div id="footer">
 	<div class="container">
-		<a href="//f18-mag.com"><?php echo $this->Html->image('logo_text.png',array('class'=>'logo'))?></a>
+		<?php echo $this->Html->link($this->Html->image('logo_text.png',array('class'=>'logo')),'/',array('escape' => false));?>
 		<p>Copyright (C)2014 F1.8magazine All Rights Reserved.</p>
 	</div>
 </div>
